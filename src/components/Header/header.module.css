@@ -2,3 +2,36 @@
     width: 100vw;
     background-color: rgb(70, 17, 119);
 }
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+.logo{
+    font-size: 30px;
+}
+
+.link{
+    padding: 8px;
+    transition: transform 0.4s ease;
+}
+
+.link:hover{
+    background-color: rgb(102, 26, 173);
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+.linkList{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+}
+
