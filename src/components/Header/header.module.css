@@ -1,6 +1,13 @@
+.headerContainer{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
 .header{
-    width: 100vw;
-    background-color: rgb(70, 17, 119);
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
 }
 
 .nav{
@@ -13,6 +20,7 @@
 
 .logo{
     font-size: 30px;
+    font-weight: bolder;
 }
 
 .link{
@@ -21,7 +29,7 @@
 }
 
 .link:hover{
-    background-color: rgb(102, 26, 173);
+    background-color: rgba(102, 26, 173, 0.603);
     border-radius: 5px;
     transform: scale(1.1);
 }
@@ -35,3 +43,15 @@
     margin: 0;
 }
 
+.cartSearch{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.btnCart{
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    font-size: 30px;
+}

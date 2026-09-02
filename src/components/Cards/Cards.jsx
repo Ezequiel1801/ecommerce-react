@@ -1,9 +1,10 @@
 import React from "react";
+import styles from "./cards.module.css";
 
 const Cards = ({ producto }) => {
   return (
     <div>
-      <div className="card" style={{ width: "18rem" }}>
+      <div className={styles.cardStyle} style={{ width: "18rem" }}>
         <img src={producto.imagen} className="card-img-top" alt="..." />
         <div className="card-body">
           <h5 className="card-title">{producto.nombre}</h5>

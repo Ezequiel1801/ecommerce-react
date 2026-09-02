@@ -8,10 +8,12 @@ const App = () => {
   return (
     <div className={styles.container}>
       <Header />
-      <div className="d-flex flex-wrap gap-3 justify-content-center">
-        {products.map((producto) => (
-          <Cards key={producto.id} producto={producto} />
-        ))}
+      <div className={styles.cardsContainer}>
+        <div className="d-flex flex-wrap gap-3 justify-content-center">
+          {products.map((producto) => (
+            <Cards key={producto.id} producto={producto} />
+          ))}
+        </div>
       </div>
     </div>
   );

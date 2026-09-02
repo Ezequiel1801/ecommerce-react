@@ -6,7 +6,7 @@ const products = [
     precio: 189000,
     categoria: "Procesadores",
     stock: 15,
-    imagen: "https://via.placeholder.com/300x200?text=Ryzen+5+5600X"
+    imagen: "./src/assets/procesadores/amd/r5-5600x.png"
   },
   {
     id: 2,
@@ -14,7 +14,7 @@ const products = [
     precio: 265000,
     categoria: "Procesadores",
     stock: 10,
-    imagen: "https://via.placeholder.com/300x200?text=Ryzen+7+5800X"
+    imagen: "./src/assets/procesadores/amd/r7-5800x.png"
   },
   {
     id: 3,
