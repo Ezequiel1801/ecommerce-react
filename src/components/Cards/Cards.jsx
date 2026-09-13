@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./cards.module.css";
 
-const Cards = ({ producto }) => {
+const Cards = ({ producto, agregarAlCarrito }) => {
   return (
     <div>
       <div className={styles.cardStyle} style={{ width: "18rem" }}>
@@ -11,7 +11,12 @@ const Cards = ({ producto }) => {
           <p className="card-text">
             $ {producto.precio.toLocaleString("es-AR")}
           </p>
-          <button className="btn btn-primary">Agregar al carrito</button>
+          <button
+            className="btn btn-primary"
+            onClick={() => agregarAlCarrito(producto)}
+          >
+            Agregar al carrito
+          </button>
         </div>
       </div>
     </div>

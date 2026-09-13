@@ -1,0 +1,113 @@
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal{
+    color: white;
+    background-color: rgb(66, 7, 121);
+    width: 90%;
+    height: 80%;
+    max-width: 100vw;
+    border-radius: 15px;
+    padding: 10px;
+    max-height: 80vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.body{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.closeBtn{
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.item{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    border: 2px solid rgb(102, 26, 173);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.item img{
+    width: 110px;
+    object-fit: cover;
+}
+
+.btnsItem{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnAgregar{
+    border: 2px solid lightskyblue;
+    padding: 0 7px;
+    background-color: rgb(66, 7, 121);
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.btnsItem input{
+    padding: 5px;
+    border-radius: 5px;
+    border-color: rgb(102, 26, 173);
+    background-color: rgb(66, 7, 121);
+    color: white;
+    width: 50px;
+}
+
+.btnsItem input::placeholder{
+    color: white;
+}
+
+.btnDisminuir{
+    border: 2px solid red;
+    padding: 0 7px;
+    background-color: rgb(66, 7, 121);
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
